@@ -1,13 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
-import Vant from 'vant'
-import 'vant/lib/index.css'
-import '@/styles/index.less'
+import store from './store/index.js'
+import './styles/index.less'
 import 'normalize.css' // 默认样式
-
-Vue.use(Vant)
+import './utils/as-required-vant.js'
 
 Vue.config.productionTip = false
 
